@@ -11,14 +11,23 @@ function Icon({
   ...rest
 }) {
   return (
-    <StyledIcon {...rest} opacity={opacity} {...rest}>
+    <StyledIcon
+      color={color}
+      width={width}
+      height={height}
+      opacity={opacity}
+      {...rest}
+    >
       {IconComponent && <IconComponent width={width} height={height} />}
     </StyledIcon>
   );
 }
 
 Icon.propTypes = {
-  children: PropTypes.any,
+  icon: PropTypes.element,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  color: PropTypes.string,
+  opacity: PropTypes.number,
 };
 
 export default Icon;
