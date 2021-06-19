@@ -7,9 +7,7 @@ function App() {
   return (
     <Router>
       <ThemeProvider theme={Theme}>
-        <div className="App">
-          
-        </div>
+        <div className="App"></div>
       </ThemeProvider>
     </Router>
   );
