@@ -25,6 +25,6 @@ const Theme = {
   xxlarge: "2.4rem",
   small: "1.2rem",
   xsmall: "1rem",
-  xxsmall: "0.8rem",
-};
-export default Theme;
+  xxsmall: "0.8rem"
+}
+export default Theme
